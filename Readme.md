@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Тараскин](https://up.htmlacademy.ru/htmlcss/37/user/968215).
-* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199)
 
 ---
 
