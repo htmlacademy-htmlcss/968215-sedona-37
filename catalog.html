@@ -5,34 +5,52 @@
     <title>HTML Academy: Каталог Гостиниц Седона</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"><img src="#" alt="CITY OF SEDONA"></a>
+    <header class="main-header">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li>
-            <a href="#">Главная</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html#advantages">О Седоне</a>
           </li>
-          <li>
-            <a href="#">О Седоне</a>
-          </li>
-          <li>
-            <a href="#">Гостиницы</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <div class="menu-buttons">
-          кнопки поиск, лайк, "хочу сюда!"
-        </div>
-
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-icon" href="#"><img src="#" alt="поиск"></a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-icon" href="#"><img src="#" alt="избранное"></a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="button-brown" href="#">ХОЧУ СЮДА!</a>
+          </li>
+        </ul>
       </nav>
-
     </header>
-    <div class="filter"></div>
-    <div class="catalog"></div>
-    <div class="subscribe"></div>
+    <main>
+      <div class="filter"></div>
+      <div class="catalog"></div>
+      <div class="subscribe"></div>
+      <section class="subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <input type="email" name="email" id="subsribe">
+        <input type="submit" name="submit" id="subscribe">
+      </section>
+    </main>
     <footer>
-
+      <section class="contacts">
+        <ul class="socials">
+          <li class="socials-icon"><img src="#" alt="Вконтакте"></li>
+          <li class="socials-icon"><img src="#" alt="Телеграм"></li>
+          <li class="socials-icon"><img src="#" alt="Ютуб"></li>
+        </ul>
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section
     </footer>
   </body>
 </html>
