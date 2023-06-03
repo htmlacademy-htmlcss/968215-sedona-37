@@ -7,6 +7,9 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
+        <a href="#">
+          <img src="#" alt="Логотип Седоны">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -35,8 +38,8 @@
       <h1 class="visually-hidden">Седона</h1>
       <section class="hero">
         <div class="welcome">векторный баннер</div>
-        <span class="hero-intro">Седона — небольшой городок в Аризоне,
-          заслуживающий большего!</span>
+        <h2>Седона — небольшой городок в Аризоне,
+          заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages" id="advantages">
@@ -44,8 +47,6 @@
           <li class="advantages-item">
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="advantages-item">
             <img src="#" alt="Фотография городка">
           </li>
           <li class="advantages-item">
@@ -62,18 +63,14 @@
           </li>
           <li class="advantages-item">
             <img src="#" alt="Фотография каньона">
-          </li>
-          <li class="advantages-item">
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
       </section>
-      <span>
+      <section class="conditions">
         <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
-      </span>
-      <section class="conditions">
         <ul class="conditions-list">
           <li class="conditions-item">
             <img src="#" alt="домик">
@@ -100,20 +97,20 @@
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input type="email" name="email" id="subsribe">
-        <input type="submit" name="submit" id="subscribe">
+        <form action="https://echo.htmlacademy.ru/courses">
+          <input type="email" name="email" placeholder="Ваш e-mail">
+          <input type="submit" name="submit" value="подписаться">
+        </form>
       </section>
     </main>
     <footer>
-      <section class="contacts">
         <ul class="socials">
-          <li class="socials-icon"><img src="#" alt="Вконтакте"></li>
-          <li class="socials-icon"><img src="#" alt="Телеграм"></li>
-          <li class="socials-icon"><img src="#" alt="Ютуб"></li>
+          <li class="socials-icon"><a href="https://vk.com/htmlacademy"><img src="#" alt="Вконтакте"></a></li>
+          <li class="socials-icon"><a href="https://t.me/htmlacademy"><img src="#" alt="Телеграм"></a></li>
+          <li class="socials-icon"><a href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Ютуб"></a></li>
         </ul>
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/"><img src="#" alt="HTML academy"></a>
-      </section>
     </footer>
   </body>
 </html>

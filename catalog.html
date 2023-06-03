@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог Гостиниц Седона</title>
   </head>
+
   <body>
     <header class="main-header">
       <nav class="navigation">
+        <a href="#">
+          <img src="#" alt="Логотип Седоны">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -34,26 +39,61 @@
     <main>
       <section class="filter">
         <h1>Гостиницы Седоны</h1>
-
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item"><span>Гостиницы</span></li>
+        </ul>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <p>Инфраструктура</p>
+            <label>
+              <input type="checkbox" name="pool" checked> Бассейн
+            </label>
+            <label>
+              <input type="checkbox" name="parking" checked> Парковка
+            </label>
+            <label>
+              <input type="checkbox" name="Wi-Fi"> Wi-Fi
+            </label>
+            <p>Тип жилья</p>
+            <label>
+              <input type="radio" name="housing" value="hotel" checked> Гостиница
+            </label>
+            <label>
+              <input type="radio" name="housing" value="motel"> Мотель
+            </label>
+            <label>
+              <input type="radio" name="housing" value="apartments"> Апартаменты
+            </label>
+            <label>
+              <p>Стоимость, ₽:</p>
+              <input type="number" name="price-from" placeholder="0">
+              <input type="number" name="price-to" placeholder="9000">
+            </label>
+            <input type="submit" name="accept" value="Применить">
+            <input type="reset" name="reset">
+          </fieldset>
+        </form>
       </section>
       <section class="catalog"></section>
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input type="email" name="email" id="subsribe">
-        <input type="submit" name="submit" id="subscribe">
+        <form action="https://echo.htmlacademy.ru/courses">
+          <input type="email" name="email" placeholder="Ваш e-mail">
+          <input type="submit" name="submit" value="подписаться">
+        </form>
       </section>
     </main>
     <footer>
-      <section class="contacts">
-        <ul class="socials">
-          <li class="socials-icon"><img src="#" alt="Вконтакте"></li>
-          <li class="socials-icon"><img src="#" alt="Телеграм"></li>
-          <li class="socials-icon"><img src="#" alt="Ютуб"></li>
-        </ul>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/"><img src="#" alt="HTML academy"></a>
-      </section
+      <ul class="socials">
+        <li class="socials-icon"><a href="https://vk.com/htmlacademy"><img src="#" alt="Вконтакте"></a></li>
+        <li class="socials-icon"><a href="https://t.me/htmlacademy"><img src="#" alt="Телеграм"></a></li>
+        <li class="socials-icon"><a href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Ютуб"></a></li>
+      </ul>
+      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="https://htmlacademy.ru/"><img src="#" alt="HTML academy"></a>
     </footer>
   </body>
+
 </html>
