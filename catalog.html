@@ -65,17 +65,117 @@
             <label>
               <input type="radio" name="housing" value="apartments"> Апартаменты
             </label>
+            <p>Стоимость, ₽:</p>
             <label>
-              <p>Стоимость, ₽:</p>
-              <input type="number" name="price-from" placeholder="0">
-              <input type="number" name="price-to" placeholder="9000">
+              <span>от</span><input type="number" name="price-from" placeholder="0" min="0" max="10000">
+            </label>
+            <label>
+              <span>до</span><input type="number" name="price-to" placeholder="9000" min="0" max="10000">
             </label>
             <input type="submit" name="accept" value="Применить">
             <input type="reset" name="reset">
           </fieldset>
         </form>
       </section>
-      <section class="catalog"></section>
+      <section class="catalog">
+        <header class="catalog-header">
+          <h2 class="visually-hidden">Каталог</h2>
+          <nav class="catalog-navigation">
+            <p>найдено гостиниц:<span>38</span></p>
+            <span>
+              <select name="sorting[]">
+                <option value="cheap-first" selected>Сначала дешевые</option>
+                <option value="expensive-first">Сначала дорогие</option>
+                <option value="popular-first">Сначала популярные</option>
+              </select>
+            </span>
+            <ul class="catalog-navigation-list">
+              <li class="catalog-navigation-item">
+                <a class="sorting-button" href="#"><img src="#" alt="Плитка"></a>
+              </li>
+              <li class="catalog-navigation-item">
+                <a class="sorting-button" href="#"><img src="#" alt="Подробно"></a>
+              </li>
+              <li class="catalog-navigation-item">
+                <a class="sorting-button" href="#"><img src="#" alt="Список"></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <ul class="catalog-results">
+          <li class="catalog-results-item">
+            <img src="#" alt="фотография отеля">
+            <h3>Amara Resort & Spa</h3>
+            <dl>
+              <dt>Гостиница</dt>
+              <dd>От 4000 ₽</dd>
+            </dl>
+            <a class="button-brown" href="#">Подробнее</a>
+            <button>В избранное</button>
+            <img src="#" alt="stars">
+            <span>Рейтинг: 8,5</span>
+          </li>
+          <li class="catalog-results-item">
+            <img src="#" alt="фотография отеля">
+            <h3>Villas at Poco Diablo</h3>
+            <dl>
+              <dt>Гостиница</dt>
+              <dd>От 5000 ₽</dd>
+            </dl>
+            <a class="button-brown" href="#">Подробнее</a>
+            <button>В избранное</button>
+            <img src="#" alt="stars">
+            <span>Рейтинг: 9,2</span>
+          </li>
+          <li class="catalog-results-item">
+            <img src="#" alt="фотография отеля">
+            <h3>Desert Quail Inn</h3>
+            <dl>
+              <dt>Гостиница</dt>
+              <dd>От 2500 ₽</dd>
+            </dl>
+            <a class="button-brown" href="#">Подробнее</a>
+            <button>В избранное</button>
+            <img src="#" alt="stars">
+            <span>Рейтинг: 6,9</span>
+          </li>
+          <li class="catalog-results-item">
+            <img src="#" alt="фотография отеля">
+            <h3>Green Tree Inn</h3>
+            <dl>
+              <dt>Гостиница</dt>
+              <dd>От 1500 ₽</dd>
+            </dl>
+            <a class="button-brown" href="#">Подробнее</a>
+            <button>В избранное</button>
+            <img src="#" alt="stars">
+            <span>Рейтинг: 5,0</span>
+          </li>
+        </ul>
+      </section>
+      <section class="pagination">
+        <ul class="pages-list">
+          <li class="pages-list-item">
+            <a class="current-page" href="#">1</a>
+          </li>
+          <li class="pages-list-item">
+            <a class="page-to-go" href="#">2</a>
+          </li>
+          <li class="pages-list-item">
+            <a class="page-to-go" href="#">3</a>
+          </li>
+          <li class="pages-list-item">
+            <a class="page-to-go" href="#">4</a>
+          </li>
+          <li class="pages-list-item">
+            <a class="other-pages" href="#">...</a>
+          </li>
+          <li class="pages-list-item">
+            <a class="page-to-go" href="#">10</a>
+          </li>
+        </ul>
+      </section>
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
