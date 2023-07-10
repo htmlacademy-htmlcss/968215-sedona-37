@@ -88,6 +88,21 @@ body {
 
 /*Раздел условия*/
 
+.house {
+  background-image: url("../images/advantage-icon/house.svg");
+  background-repeat: no-repeat;
+}
+
+.food {
+  background-image: url("../images/advantage-icon/food.svg");
+  background-repeat: no-repeat;
+}
+
+.gift {
+  background-image: url("../images/advantage-icon/gift.svg");
+  background-repeat: no-repeat;
+}
+
 .conditions {
   background-color: #FFFFFF;
   color: #000000;
